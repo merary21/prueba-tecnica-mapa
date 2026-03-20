@@ -1,0 +1,182 @@
+
+/* ------------------ diseño de login y registro ------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #1f1f1f;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENEDOR */
+.container {
+    background: #2b2b2b;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+/* TITULO */
+h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Entrados de datos del usuario */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: #1f1f1f;
+    color: white;
+}
+
+/* Botones generales */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #f39c12;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e67e22;
+}
+
+/* Link */
+a {
+    display: block;
+    margin-top: 12px;
+    color: #f39c12;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+
+/* -------- Estilo de Mapa ---------*/
+
+/* NAVBAR */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: #404040;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.logo-text {
+    color: white; 
+   
+}
+/* Izquierda */
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Icono de los 3 puntos del menu */
+.menu-icon {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Menu derecho */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* nombre de usuario registrado */
+#userName {
+    color: #F2F2F2;
+}
+
+/* BOTON NAVBAR */
+.menu button {
+    background: #D96E30;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Ajuste del mapa */
+#map {
+    height: 100vh;
+    width: 100%;
+    margin-top: 60px;
+}
+
+/* Boton de cerrar sesion */
+.logout-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+    background: #f39c12;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    background: #F2F2F2;
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 2000;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+.dropdown button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    background: #D96E30;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+/* OCULTO */
+.hidden {
+    display: none;
+}
