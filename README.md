@@ -40,8 +40,8 @@ De esta forma, se logró una interfaz simple pero visualmente atractiva.
 
 ## Tecnologías utilizadas
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 - Leaflet.js (mapas interactivos)
 - LocalStorage (Simula base de datos)
@@ -72,7 +72,7 @@ Esto permite:
 
 ## Cómo ejecutar el proyecto
 
-IMPORTANTE: No abrir los archivos con doble clic (puede generar errores como el 403 al cargar el mapa). Esto ocurre porque algunos recursos del mapa requieren ejecutarse desde un servidor.
+IMPORTANTE: Abrir los archivos con doble clic (puede generar errores como el 403 al cargar el mapa). Esto ocurre porque algunos recursos del mapa requieren ejecutarse desde un servidor.
 
 ### Opción 1: Con Live Server (recomendado)
 
@@ -89,6 +89,3 @@ El mapa puede no funcionar correctamente (error 403)
 ---
 
 Autor: Merary Julissa Araujo
-
-
-## 📦 Estructura del proyecto
