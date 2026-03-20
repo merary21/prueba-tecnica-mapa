@@ -1,0 +1,88 @@
+/* FONDO GENERAL */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1f1f1f, #2b2b2b);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENEDOR */
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+/* TARJETA PRINCIPAL */
+.card {
+    background: #2b2b2b;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 420px;
+    margin: auto;
+    box-shadow: 0px 15px 35px rgba(0,0,0,0.6);
+    animation: fadeIn 1s ease;
+}
+
+/* TITULO */
+.card h1 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+/* DESCRIPCIÓN */
+.card p {
+    color: #ccc;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* BOTONES */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* BOTÓN PRINCIPAL */
+button {
+    padding: 12px;
+    background: #f39c12;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e67e22;
+    transform: scale(1.05);
+}
+
+/* BOTÓN SECUNDARIO */
+.secondary {
+    background: transparent;
+    border: 2px solid #f39c12;
+}
+
+.secondary:hover {
+    background: #f39c12;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
