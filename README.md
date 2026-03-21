@@ -1,6 +1,6 @@
 # Mapa con Marcadores
 
-Aplicación web desarrollada como prueba técnica para el puesto de **Analista Programador Jr**, que permite a los usuarios registrarse, iniciar sesión y gestionar ubicaciones en un mapa interactivo mediante marcadores arrastrables.
+Aplicación web que permite a los usuarios registrarse, iniciar sesión y gestionar ubicaciones en un mapa interactivo mediante marcadores arrastrables.
 
 ---
 
@@ -88,4 +88,4 @@ El mapa puede no funcionar correctamente (error 403)
 
 ---
 
-Autor: Merary Julissa Araujo
+## Autor: Merary Julissa Araujo
