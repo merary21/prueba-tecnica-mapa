@@ -1,7 +1,7 @@
 ## Guía de usuario
 
 ### Registro e inicio de sesión
-- El usuario puede registrarse ingresando sus datos
+- Puede registrarse ingresando sus datos (nombre de usuario y contraseña)
 - Luego puede iniciar sesión con sus credenciales
 
 ### Uso del mapa
@@ -27,5 +27,5 @@
 - Desde la página de ubicaciones, se puede regresar al mapa
 
 ### Cerrar sesión
-- El usuario puede cerrar sesión desde la barra superior
+- Puede cerrar sesión desde la barra superior
 - Esto finaliza la sesión actual y evita el acceso al mapa sin autenticación
