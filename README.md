@@ -18,8 +18,8 @@ Se solicitó desarrollar una aplicación web que incluya:
 
 ### Funcionalidades adicionales
 - Confirmación antes de guardar una ubicación
-- Almacenamiento de ubicaciones guardadas
-- Visualización de ubicaciones desde un menú desplegable
+- Almacenamiento de ubicaciones guardadas con fecha
+- Visualización de ubicaciones desde un menú desplegable hacia la pagina de ubicaciones
 - Protección de rutas (no acceso al mapa sin autenticación)
 - Interfaz organizada con navbar y menú interactivo
 - Página de inicio (home) para mejorar la experiencia de usuario
