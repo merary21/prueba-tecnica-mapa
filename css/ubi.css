@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #1f1f1f;
+    color: #ffffff;
+}
+
+/* CONTENEDOR GENERAL */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+/* BOTON VOLVER */
+.btn-volver {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #D96E30;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-volver:hover {
+    background: #b85722;
+}
+
+/* CONTADOR */
+.contador {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #D96E30;
+}
+
+/* LISTA */
+.lista-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* TARJETAS */
+.ubicacion-card {
+    display: flex;
+    align-items: center;
+    background: #2b2b2b;
+    padding: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+}
+
+.ubicacion-card:hover {
+    transform: translateY(-3px);
+    background: #333333;
+}
+
+
+/* INFO */
+.ubicacion-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.ubicacion-nombre {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.ubicacion-coords {
+    font-size: 13px;
+    color: #aaaaaa;
+}
+
+.ubicacion-fecha {
+    font-size: 12px;
+    color: #D96E30;
+    margin-top: 3px;
+}
+
+/* SIN UBICACIONES */
+.sin-ubicaciones {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sin-ubicaciones h2 {
+    margin-bottom: 10px;
+}
+
+.sin-ubicaciones p {
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+/* BOTÓN IR AL MAPA */
+.btn-ir-mapa {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #D96E30;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-ir-mapa:hover {
+    background: #b85722;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .ubicacion-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

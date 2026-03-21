@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicaciones Guardadas</title>
+     <link rel="stylesheet" href="../css/ubi.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Ubicaciones Guardadas</h1>
+            <p>Haz clic para ir a tu ubicación</p>
+            <a href="map.html" class="btn-volver">← Volver al Mapa</a>
+        </div>
+
+        <div class="lista-container">
+            <div id="contenido">
+                <!-- El contenido se carga dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Cargar ubicaciones al iniciar
+        document.addEventListener('DOMContentLoaded', cargarUbicaciones);
+
+        function cargarUbicaciones() {
+            const ubicaciones = JSON.parse(localStorage.getItem("locations")) || [];
+            const contenido = document.getElementById('contenido');
+
+            if (ubicaciones.length === 0) {
+                contenido.innerHTML = `
+                    <div class="sin-ubicaciones">
+                        <h2>No hay ubicaciones guardadas</h2>
+                        <p>Explora el mapa y guarda tus lugares favoritos</p>
+                        <a href="map.html" class="btn-ir-mapa">Ir al Mapa</a>
+                    </div>
+                `;
+                return;
+            }
+
+            // Mostrar contador
+            let html = `<div class="contador">${ubicaciones.length} ubicación(es) guardada(s)</div>`;
+
+            // Listar ubicaciones
+            ubicaciones.forEach((ubicacion, index) => {
+                const fecha = ubicacion.fecha ? new Date(ubicacion.fecha).toLocaleDateString() : 'Sin fecha';
+                
+                html += `
+                    <div class="ubicacion-card" onclick="irAUbicacion(${ubicacion.lat}, ${ubicacion.lng}, '${ubicacion.name}')">
+                        <div class="ubicacion-info">
+                            <div class="ubicacion-nombre">${ubicacion.name}</div>
+                            <div class="ubicacion-coords">
+                                Lat: ${ubicacion.lat.toFixed(6)}, Lng: ${ubicacion.lng.toFixed(6)}
+                            </div>
+                            <div class="ubicacion-fecha"> Guardada: ${fecha}</div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            contenido.innerHTML = html;
+        }
+
+        function irAUbicacion(lat, lng, nombre) {
+            // Redirigir al mapa con parámetros en la URL
+            window.location.href = `map.html?lat=${lat}&lng=${lng}&nombre=${encodeURIComponent(nombre)}`;
+        }
+    </script>
+</body>
+</html>
