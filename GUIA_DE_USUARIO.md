@@ -38,7 +38,7 @@
 
 ### 6. Ver ubicaciones guardadas
 1. Ir a la parte superior izquierda de la pantalla
-2. Dar clic en el ícono de tres puntos (⋮)
+2. Dar clic en el ícono de tres puntos
 3. Seleccionar la opción "Ver ubicaciones guardadas"
 4. Se mostrará una lista con todas las ubicaciones registradas
 
