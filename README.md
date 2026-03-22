@@ -1,6 +1,6 @@
 # Mapa con Marcadores
 
-Aplicación web que permite a los usuarios registrarse, iniciar sesión y gestionar ubicaciones en un mapa interactivo mediante marcadores arrastrables.
+Aplicación web que permite a los usuarios registrarse, iniciar sesión y guardar ubicaciones en un mapa interactivo mediante marcadores arrastrables.
 
 ---
 
@@ -22,7 +22,7 @@ Se solicitó desarrollar una aplicación web que incluya:
 - Visualización de ubicaciones desde un menú desplegable hacia la pagina de ubicaciones
 - Protección de rutas (no acceso al mapa sin autenticación)
 - Interfaz organizada con navbar y menú interactivo
-- Página de inicio (home) para mejorar la experiencia de usuario
+- Página de inicio (home)
 
 ---
 ## Diseño de la interfaz
@@ -81,7 +81,7 @@ IMPORTANTE: Abrir los archivos con doble clic (puede generar errores como el 403
 3. Clic derecho en `home.html`
 4. Seleccionar "Open with Live Server"
 
-Opción alternativa
+### Opción alternativa
 Abrir `home.html` con doble clic.
 Permite ver la interfaz  
 El mapa puede no funcionar correctamente (error 403)
